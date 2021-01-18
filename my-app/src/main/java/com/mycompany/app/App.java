@@ -1,5 +1,4 @@
 package com.mycompany.app;
-import software.amazon.codeguruprofilerjavaagent.Profiler;
 
 /**
  * Hello world!
@@ -9,11 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Profiler.Builder()
-  .profilingGroupName("maven-hello-world")
-  .awsCredentialsProvider(myAwsCredentialsProvider) // optional
-  .withHeapSummary(true) // optional - to start without heap profiling set to false or remove line
-  .build().start();
+        
         
         System.out.println( "Hello World!" );
 
